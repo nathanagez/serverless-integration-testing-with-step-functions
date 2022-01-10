@@ -11,7 +11,7 @@ export class PipelineStack extends Stack {
             pipelineName: 'MyPipeline',
             synth: new ShellStep('Synth', {
                 input: CodePipelineSource.gitHub('nathanagez/serverless-integration-testing-with-step-functions', 'master'),
-                commands: ['npm ci', 'npm run build', 'npx cdk synth']
+                commands: ['npm ci', 'npm run build', 'npm run test', 'npx cdk synth']
             })
         });
 
