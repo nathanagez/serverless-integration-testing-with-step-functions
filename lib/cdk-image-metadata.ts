@@ -11,7 +11,7 @@ export class CdkImageMetadata extends Stack {
 
         const inputHandler = new Function(this, 'imageMetadata', {
             runtime: Runtime.NODEJS_14_X, // execution environment
-            code: Code.fromAsset('lambda'), // code loaded from "lambda" directory
+            code: Code.fromAsset('resources/metadata-lambda'), // code loaded from "resources/metadata-lambda" directory
             handler: 'image-metadata.handler' // file is "image-metadata", function is "handler"
         });
         const s3BucketPolicy = new PolicyStatement({

@@ -10,3 +10,5 @@ cdk.out
 .idea
 
 .env
+
+!resources/**/*.js
