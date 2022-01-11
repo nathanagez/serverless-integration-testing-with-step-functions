@@ -46,5 +46,5 @@ const send = (event, context, responseStatus, responseData, physicalResourceId, 
 
 exports.handler = async (event, context) => {
     console.log(`EVENT: ${JSON.stringify(event, null, 2)}`)
-    response.send(event, context, "SUCCESS", {})
+    send(event, context, "SUCCESS", {})
 }
