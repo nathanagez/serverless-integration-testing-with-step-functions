@@ -11,7 +11,7 @@ const send = (event, context, responseStatus, responseData, physicalResourceId, 
         RequestId: event.RequestId,
         LogicalResourceId: event.LogicalResourceId,
         NoEcho: noEcho || false,
-        Data: responseData
+        Data: {responseData}
     });
 
     console.log("Response body:\n", responseBody);
