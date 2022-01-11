@@ -1,9 +1,10 @@
-import {RemovalPolicy, Stack, StackProps} from 'aws-cdk-lib';
+import {CfnOutput, RemovalPolicy, Stack, StackProps} from 'aws-cdk-lib';
 import {Construct} from 'constructs';
 import {Bucket, EventType} from "aws-cdk-lib/aws-s3";
 import {Code, Function, Runtime} from 'aws-cdk-lib/aws-lambda';
 import {S3EventSource} from "aws-cdk-lib/aws-lambda-event-sources";
 import {Policy, PolicyStatement} from "aws-cdk-lib/aws-iam";
+import {IntegrationTests} from "./integration-tests";
 
 export class CdkImageMetadata extends Stack {
     constructor(scope: Construct, id: string, props?: StackProps) {
@@ -31,6 +32,15 @@ export class CdkImageMetadata extends Stack {
         });
 
         inputHandler.addEventSource(s3PutEventSource);
+
+        const resource = new IntegrationTests(this, 'IntegrationTests', {
+            message: 'CustomResource says hello'
+        })
+
+        new CfnOutput(this, 'ResponseMessage', {
+            description: 'The message that came back from the Custom Resource',
+            value: resource.response
+        });
 
     }
 }
