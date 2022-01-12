@@ -24,7 +24,5 @@ export class IntegrationTests extends Construct {
             serviceToken: provider.serviceToken,
             properties: props,
         });
-
-        this.response = resource.getAtt('Response').toString();
     }
 }
