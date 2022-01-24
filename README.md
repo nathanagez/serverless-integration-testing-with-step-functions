@@ -1,10 +1,13 @@
-# Welcome to your CDK TypeScript project!
+# serverless-integration-testing-with-step-functions
 
-This is a blank project for TypeScript development with CDK.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+Based on [Bite-Sized Serverless](https://bitesizedserverless.com/) courses.
 
 ## TODO:
+
+- [ ] Write unit tests
+- [ ] Connect resources together
+- [ ] Write lambda functions code
+- [ ] Replace TODO comments
 
 Implement integration tests stack
 
