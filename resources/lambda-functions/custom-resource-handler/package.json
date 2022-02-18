@@ -1,0 +1,14 @@
+{
+  "name": "custom-resrouce-handler",
+  "version": "1.0.0",
+  "description": "Lambda function used as a custom resource",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nathan AGEZ",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.1073.0"
+  }
+}

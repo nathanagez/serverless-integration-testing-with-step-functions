@@ -1,0 +1,14 @@
+{
+  "name": "update-cfn-custom-resource",
+  "version": "1.0.0",
+  "description": "Lambda function that reports the state machine results back to CFN",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Nathan AGEZ",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.1073.0"
+  }
+}

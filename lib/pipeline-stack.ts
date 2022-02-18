@@ -15,7 +15,7 @@ export class PipelineStack extends Stack {
             })
         });
 
-        const deploy = new PipelineStage(this, 'Deploy');
-        const deployStage = pipeline.addStage(deploy);
+        const deploy = new PipelineStage(this, 'dev');
+        pipeline.addStage(deploy);
     }
 }
