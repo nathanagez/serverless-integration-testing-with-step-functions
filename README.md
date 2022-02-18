@@ -11,7 +11,8 @@ Inspired from [Bite-Sized Serverless](https://bitesizedserverless.com/) courses 
     - [Temporary stage](#temporary-stage)
 - [Useful commands](#useful-commands)
 
-This sample repository integrate [serverless-integration-testing-with-step-functions](https://github.com/bitesizedserverless/serverless-integration-testing-with-step-functions) with CDK Pipelines, in TypeScript.
+This sample repository integrates [serverless-integration-testing-with-step-functions](https://github.com/bitesizedserverless/serverless-integration-testing-with-step-functions) with CDK Pipelines, in TypeScript.
+
 All credits go to [@donkersgood](https://twitter.com/donkersgood) for his work on [bitesizedserverless.com](https://bitesizedserverless.com/).
 
 ## Getting started
